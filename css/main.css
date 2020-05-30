@@ -1,45 +1,43 @@
 /*------------Fonts-------------*/
 
+
 @font-face {
-  font-family: 'Museo Sans 100';
-  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
-	   font-weight: 100;
+	font-family: 'Museo Sans 100';
+	src: url('../fonts/MuseoSansCyrl-100.eot');
+	src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'),
+		url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'),
+		url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg');
+		font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Museo Sans 300';
-  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
-	   font-weight: 300;
+	font-family: 'Museo Sans 300';
+	src: url('../fonts/MuseoSansCyrl-300.eot');
+	src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+		url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'),
+		url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg');
+		font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Museo Sans 700';
-  src: url('../fonts/MuseoSansCyrl-700.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/MuseoSansCyrl-700.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/MuseoSansCyrl-700.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/MuseoSansCyrl-700.svg#svgFontName') format('svg'); /* Legacy iOS */
-     font-weight: 700;
+	font-family: 'Museo Sans 700';
+	src: url('../fonts/MuseoSansCyrl-700.eot');
+	src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+		url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl-700.ttf')  format('truetype'),
+		url('../fonts/MuseoSansCyrl-700.svg#svgFontName') format('svg');
+		font-weight: 700;
 }
 
 
 
 /*-----------Specification---------------*/
 
-.container {
-  max-width: 1200px;
-}
 
 body {
 	font-family: 'Museo Sans 300';
@@ -77,7 +75,6 @@ h3 {
 	font-family: 'Museo Sans 700';
 	font-size: 23px;
 	color: #081d42;
-
 }
 
 h4 {
@@ -111,12 +108,17 @@ button, button:hover, button:focus, button:active {
 	outline: none;
 }
 
+.container {
+  max-width: 1200px;
+}
 
-/*-----------Header---------------*/
+/*-------------Home page-------------*/
+
+/*-------Header------*/
 
 .header {
 	position: relative;
-	background: url(../img/bg_header.png) no-repeat center / cover;
+	background: url('../img/bg_header.png') no-repeat center / cover;
 	border-top: 5px solid #58647a;	
 }
 
@@ -133,7 +135,7 @@ button, button:hover, button:focus, button:active {
 .navigation {
 	position: relative;
 	background-color: rgba(191,194,200,0.41);
-   box-shadow: 0 0 0 4px rgba(88,100,122,.1);
+	box-shadow: 0 0 0 4px rgba(88,100,122,.1);
 	padding: 17px 0 5px;
 }
 
@@ -142,6 +144,12 @@ button, button:hover, button:focus, button:active {
 	font-size: 17px;
 	color: #3f4b60;
 	text-decoration: none;
+	border-bottom: 2px solid transparent;
+}
+
+.menu__item a:hover {
+	color: #b81c31;
+	border-bottom: 2px solid #b81c31;
 }
 
 .btn {
@@ -160,7 +168,6 @@ button, button:hover, button:focus, button:active {
 
 .btn:active {
 	border-bottom: 2px solid #149d6f;
-
 }
 
 .offer {
@@ -178,29 +185,68 @@ button, button:hover, button:focus, button:active {
 }
 
 .home-social {
-    background: rgba(235,229,232, 0.8);
-    border: 3px solid rgba(233, 240, 252, 0.6);
-    border-radius: 5px;
-    max-width: 172px;
-    padding: 8px 18px;
-    font-size: 16px;
-    background-clip: padding-box;
+  background: rgba(235,229,232, 0.8);
+  border: 3px solid rgba(233, 240, 252, 0.6);
+  border-radius: 5px;
+  max-width: 172px;
+  padding: 8px 18px;
 }
 
-.home-social__item {
-    border: 2px solid #3d6ca8;
+.home-social__link  {
+  padding: 0 6px;
+  font-size: 17px;
 }
 
-.home-social__link {
-    padding: 0 6px;
+.home-social__link_facebook {
+  color: #3d6ca8;
 }
 
-.fab {
-	font-family: "Font Awesome 5 Brands";
-	font-size: 17px;
+.home-social__item_facebook {
+  border: 2px solid  #3d6ca8;
 }
 
-/*-----------First section---------*/
+.home-social__item_twitter {
+  border: 2px solid #17c0ff;
+}
+
+.home-social__item_telegram {
+  border: 2px solid #25a3d4;
+}
+
+.home-social__link_twitter {
+  color: #17c0ff;
+}
+
+.home-social__link_telegram {
+  color: #25a3d4;
+}
+
+.home-social__link_facebook a {
+  color: #3d6ca8;
+}
+
+.home-social__link_twitter a {
+  color:  #17c0ff;
+}
+
+.home-social__link_telegram a {
+  color:  #25a3d4;
+}
+
+.home-social__link_facebook:hover {
+  color: #3d6ca8;
+}
+
+.home-social__link_twitter:hover {
+  color:  #17c0ff;
+}
+
+.home-social__link_telegram:hover {
+  color:  #25a3d4;
+}
+
+
+/*-----First section-----*/
 
 .trust {
 	background-color: #f1f1f3;
@@ -245,7 +291,7 @@ button, button:hover, button:focus, button:active {
     line-height: 20px;
 }
 
-/* -----------Second section------------------- */
+/* -----Second section----- */
 
 .lab {
     padding: 104px 0 78px;
@@ -253,6 +299,8 @@ button, button:hover, button:focus, button:active {
 }
 
 .business__circle {
+	font-family: 'Museo Sans 100';
+    font-size: 50px;
     border-radius: 50%;
     width: 85px;
     height: 85px;
@@ -262,13 +310,13 @@ button, button:hover, button:focus, button:active {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font: 100 50px 'Museo Sans', sans-serif;
 }
 
 .business__title {
+	font-family: 'Museo Sans 100';
+    font-size: 24px;
     text-align: center;
     margin: 7px 0 12px;
-    font: 100 24px 'Museo Sans', sans-serif;
 }
 
 .business__title_red {
@@ -280,7 +328,7 @@ button, button:hover, button:focus, button:active {
     color: #404048;
 }
 
-/*-----------Tird section-----------*/
+/*-----Third section-----*/
 
 .info {
     padding: 38px 0 40px;
@@ -348,6 +396,7 @@ button, button:hover, button:focus, button:active {
     display: inline-block;
     line-height: 1.1;
     max-width: 183px;
+    text-decoration: none;
 }
 
 .news__title {
@@ -381,7 +430,7 @@ button, button:hover, button:focus, button:active {
 	background-color: #979daa;
 }
 
-/*----------Fourth section------------*/
+/*------Fourth section------*/
 
 .composition {
   padding: 38px 0 0;
@@ -398,6 +447,7 @@ button, button:hover, button:focus, button:active {
   font-weight: 700;
   margin-bottom: 14px;
   display: block;
+  text-decoration: none;
 }
 
 .page-title:hover {
@@ -406,6 +456,10 @@ button, button:hover, button:focus, button:active {
 
 .site-map {
   margin-bottom: 45px;
+}
+
+.site-map a {
+	text-decoration: none;
 }
 
 .specific__link {
@@ -502,3 +556,89 @@ button, button:hover, button:focus, button:active {
   color: #9c9da1;
   border-bottom: 1px solid #9c9da1;
 }
+
+/*-----About page-----*/
+
+/*---Section Merit---*/
+
+.merit {
+  padding: 45px 0 45px;
+}
+
+.merit-title {
+  letter-spacing: 0.02em;
+}
+
+.privilege-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #404048;
+  margin: 28px 0 53px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  padding: 15px 0 15px;
+}
+
+.privilege-text__left {
+  width: 50%;
+}
+
+.privilege-text__right {
+  width: 49%;
+}
+
+.summary {
+  border-top: 2px solid #e5e6e8;
+}
+
+.summary__circle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #102e62; 
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background: url(../img/scales.png) no-repeat center center;
+}
+
+.summary__title {
+ margin-bottom: 12px;
+ font-size: 19px;
+}
+
+.summarry__text {
+  color: #404048;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.summary__desc {
+  width: 90%;
+}
+
+.summary__text {
+  font-size: 14px;
+  color: #404048;
+  letter-spacing: 0.02em;
+}
+
+.summary__list {
+  padding: 22px 0 38px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.summary__list:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #e5e6e8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 82%;
+}
+
+/*----Services page----*/
+
+/*----Contacts page----*/
