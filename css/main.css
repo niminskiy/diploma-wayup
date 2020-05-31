@@ -96,7 +96,8 @@ ul,li {
 a {
 	box-sizing: border-box;
 	text-decoration: none;
-	font-size: 14px;
+  font-size: 14px;
+  outline: none;
 }
 
 a, button, input {
@@ -558,6 +559,119 @@ button, button:hover, button:focus, button:active {
 }
 
 /*-----About page-----*/
+
+.describe {
+  padding: 63px 0 71px;
+  background-color: #fafafb;
+  border-top: 4px solid #f1f1f3;
+  color: #a1a6af;
+}
+
+.describe h1 {
+  font-family: 'Museo Sans 700';
+	font-size: 38px;
+	color: #081d42;
+}
+
+.crumblebread {
+  margin-top: 10px;
+}
+
+.breadcrumbs__link {
+  color: #a1a6af;
+}
+
+.breadcrumbs__link:not(:last-child):after {
+  content: '\2192';
+  margin: 0 4px 0 5px;
+}
+
+.paragraph a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 13px 14px;
+  color: #a1a6af;
+  border: 2px solid transparent;
+  transition: all .6s ease;
+}
+
+.paragraph a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #b81c31;
+  border: 2px solid #b81c31; 
+  border-radius: 2px;
+}
+
+ .paragraph a:active {
+  text-decoration: none;
+  outline: none;
+  color: #b81c31;
+  border: 2px solid #b81c31; 
+  border-radius: 2px;
+}
+
+.presentation {
+  padding: 47px 0 69px;
+}
+
+.photos-title {
+  margin-bottom: 42px;
+  letter-spacing: 0.02em;
+}
+
+.image__item {
+  width: 270px;
+  height: 270px;
+}
+
+.resourse {
+  max-width: 270px;
+  width: 100%;
+  transition: all 0.6s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.resourse__detailes {
+position: absolute;
+top: -300px;
+left: -300px;
+opacity: 0;
+width: 100%;
+height: 100%;
+justify-content: center;
+border: 7px solid #9a97a7;
+transition: all 0.6s ease;
+background: rgba(58,68,86,0.7);
+}
+
+.resourse__link {
+color: #fff;
+font-size: 29px;
+}
+
+.resourse__expand {
+color: #fff;
+transform: rotate(45deg);
+transform: rotate(45deg) scale(1) skew(1deg) translate(0);
+  -webkit-transform: rotate(45deg) scale(1) skew(1deg) translate(0);
+  -moz-transform: rotate(45deg) scale(1) skew(1deg) translate(0);
+  -o-transform: rotate(45deg) scale(1) skew(1deg) translate(0);
+  -ms-transform: rotate(45deg) scale(1) skew(1deg) translate(0);
+}
+
+.resourse__link:hover {
+color: #fff;
+} 
+
+.resourse:hover .resourse__detailes  {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
 
 /*---Section Merit---*/
 
