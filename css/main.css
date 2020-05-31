@@ -154,17 +154,17 @@ button, button:hover, button:focus, button:active {
 }
 
 .btn {
-	font-family: 'Museo Sans 700';
-	font-size: 13px;
-    color: #fff;
-    background: #1cb883;
-    text-align: center;
-    display: block;
-    width: 156px;
-    padding: 8px 0;
-    margin: 0 auto;
-    border-radius: 0;
-    border-bottom: 4px solid #149d6f;
+  font-family: 'Museo Sans 700';
+  font-size: 13px;
+  color: #fff;
+  background: #1cb883;
+  text-align: center;
+  display: block;
+  width: 156px;
+  padding: 8px 0;
+  margin: 0 auto;
+  border-radius: 0;
+  border-bottom: 4px solid #149d6f;
 }
 
 .btn:active {
@@ -172,17 +172,17 @@ button, button:hover, button:focus, button:active {
 }
 
 .offer {
-	padding: 100px 0 132px;
-    color: #081d42;
-    border-bottom: 16px solid rgba(255, 255, 255, 0.15);
+  padding: 100px 0 132px;
+  color: #081d42;
+  border-bottom: 16px solid rgba(255, 255, 255, 0.15);
 }
 
 .offer__text {
-	font-family: 'Museo Sans 300';
-	font-size: 29px;
-    max-width: 463px;
-    margin:13px 0 27px;
-    line-height: 1.2em;
+  font-family: 'Museo Sans 300';
+  font-size: 29px;
+  max-width: 463px;
+  margin:13px 0 27px;
+  line-height: 1.2em;
 }
 
 .home-social {
@@ -577,8 +577,24 @@ button, button:hover, button:focus, button:active {
   margin-top: 10px;
 }
 
+.crumblebread__item {
+  font-family: 'Museo Sans 300';
+	font-size: 16px;
+	color: #7e838d;
+}
+
 .breadcrumbs__link {
-  color: #a1a6af;
+  font-family: 'Museo Sans 300';
+	font-size: 16px;
+  color: #7e838d;
+}
+
+.breadcrumbs__link:hover {
+  font-family: 'Museo Sans 300';
+	font-size: 16px;
+  color: #49556b;
+  text-decoration: none;
+  border-bottom: 1px solid #5f697d;
 }
 
 .breadcrumbs__link:not(:last-child):after {
@@ -594,7 +610,7 @@ button, button:hover, button:focus, button:active {
   padding: 13px 14px;
   color: #a1a6af;
   border: 2px solid transparent;
-  transition: all .6s ease;
+  transition: all .5s ease;
 }
 
 .paragraph a:hover {
@@ -755,4 +771,10 @@ color: #fff;
 
 /*----Services page----*/
 
+.paragraph__disc {
+  font-family: 'Museo Sans 300';
+  font-size: 13px;
+}
+
 /*----Contacts page----*/
+
