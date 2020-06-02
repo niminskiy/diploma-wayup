@@ -1072,5 +1072,179 @@ display: block;
   font-size: 13px;
 }
 
+/* Subcategory*/
+
+.category {
+  padding: 12px 0 55px;
+  letter-spacing: 0.02em;
+}
+
+.sub {
+  padding-top:  45px;
+  margin-bottom: 30px;
+}
+
+.sub__desc:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.sub__title {
+  margin-bottom: 23px;
+  font-size: 29px;
+  font-weight: 700;
+  color: #081d42;
+  letter-spacing: 0.02em;
+}
+
+.sub__desc {
+  color: #404048;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+}
+
+.help {
+  border: 2px solid #e3e4e6;
+  border-radius: 4px;
+  padding: 23px 28px 29px 32px;
+  max-width: 470px;
+  background: url(..//img/conf-call.png) right bottom no-repeat;
+}
+
+.help__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #414449;
+  margin-bottom: 16px;
+}
+
+.help__call {
+  color: #b81c31;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid #b81c31;
+  padding: 10px 19px;
+  background: transparent;
+}
+
+.help__call:hover {
+  color: #fff;
+  border: 2px solid transparent;
+  background: #b81c31;
+  text-decoration: none;
+}
+
+.help__number:hover {
+  color: #b81c31;
+}
+
+.help__desc {
+  font-size: 12px;
+  font-weight: 300;
+  color: #888d95;
+  max-width: 270px;
+  margin-top: 11px;
+  line-height: 1.2em;
+}
+
+.help__number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #585f6b;
+  margin-left: 30px;
+}
+
+.help__img {
+  height: 93px;
+}
+
+.all {
+  background-color: #fafafb;
+  padding: 50px 0 0 26px;
+  height: 100%;
+
+}
+
+.guidance {
+    margin-bottom: 51px;
+}
+
+.guidance__title {
+  font-size: 18px;
+  color: #969ca9;
+  margin-bottom: 42px;
+}
+
+.subparagraph {
+  font-size: 15px;
+  font-weight: 700;
+  border-top: 1px solid #dfdfe8;
+  margin-bottom: 50px;
+}
+
+.subparagraph__link {
+  color: #747487;
+  margin-left: 30px;
+}
+
+.subparagraph__link:hover {
+  text-decoration: none;
+  color: #747487;
+}
+
+.subparagraph__list:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: #aeaeb9;
+    margin-right: 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.subparagraph__list {
+  border-bottom: 1px solid #dfdfe8; 
+  padding: 10px 0;
+  position: relative;
+}
+
+.review__title {
+  color: #969ca9;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.review__slide {
+  text-align: center;
+}
+
+.review__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #747487;
+  margin: 17px 0 17px
+}
+
+.review__text {
+  font-size: 13px;
+  font-weight: 300;
+  color: #404048;
+  margin-bottom: 16px;
+  max-width: 254px;
+  margin: 0 auto;
+
+}
+
+.review__link {
+  color: #2c60a0;
+  font-size: 16px;
+  margin: 15px 0 20px;
+  display: block;
+}
+
 /*----Contacts page----*/
 
