@@ -684,7 +684,8 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 82%;
+  width: 100%;
+  max-width: 960px;
 }
 
 .summary__circle {
@@ -722,7 +723,11 @@ img {
 }
 
 .gallery {
-
+  max-width: 268px;
+  width: 100%;
+  transition: all 0.6s ease;
+  position: relative;
+  margin: 0 auto;
 }
 
 .gallery__link {
@@ -730,13 +735,7 @@ img {
 }
 
 .gallery__item {
-  max-width: 270px;
-  width: 100%;
-  transition: all 0.6s ease;
-  position: relative;
-  overflow: hidden;
-  width: 270px;
-  height: 270px;
+  
 }
 
 .gallery__over {
@@ -751,20 +750,9 @@ img {
   transition: all 0.5s ease;
 }
 
-.image:hover .image__over{
+.gallery:hover .gallery__over{
 	display: flex;
-	
-
-
-
-
-
-
-
-
-
-
-
+	~
 
 /*------Services------*/
 
