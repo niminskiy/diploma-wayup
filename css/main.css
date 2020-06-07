@@ -109,13 +109,17 @@ button, button:hover, button:focus, button:active {
 	outline: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1200px;
 }
 
 /*-------------Home page-------------*/
 
-/*-------Header------*/
+/* ---Header--- */
 
 .header {
 	position: relative;
@@ -132,6 +136,8 @@ button, button:hover, button:focus, button:active {
 	width: 100%;
 	background: rgba(165,198,255,.47);
 }
+
+/* ---Navigation--- */
 
 .navigation {
 	position: relative;
@@ -171,22 +177,10 @@ button, button:hover, button:focus, button:active {
 	border-bottom: 2px solid #149d6f;
 }
 
-.btn i {
-  color: #46e6b0;
-}
-
 .offer {
   padding: 100px 0 132px;
   color: #081d42;
   border-bottom: 16px solid rgba(255, 255, 255, 0.15);
-}
-
-.offer__text {
-  font-family: 'Museo Sans 300';
-  font-size: 29px;
-  max-width: 463px;
-  margin:13px 0 27px;
-  line-height: 1.2em;
 }
 
 .home-social {
@@ -251,23 +245,28 @@ button, button:hover, button:focus, button:active {
 }
 
 
-/*-----First section-----*/
+/*---Trust---*/
 
 .trust {
 	background-color: #f1f1f3;
 	padding: 52px 0 90px;
-    position: relative;
+  position: relative;
+  text-align: center;
 }
 
 .trust__title {
 	margin-bottom: 41px;
 }
 
+.question {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .question__circle {
 	margin: 0 auto;
 	width: 118px;
 	height: 118px;
-	text-align: center;
 	line-height: 113px;
 	background-color: #c8cbdb;
 	border-radius: 50%;
@@ -275,28 +274,26 @@ button, button:hover, button:focus, button:active {
 
 .question__title {
 	margin: 21px 0 9px;
-    text-align: center;
 }
 
 .question__text {
-	text-align: center;
-    letter-spacing: 0.02em;
-    line-height: 1.3em;
+  letter-spacing: 0.02em;
+  line-height: 1.3em;
 }
 
 .btn_more {
 	position: absolute;
-    font-size: 16px;
-    width: 170px;
-    left: 50%;
-    bottom: -25px;
-    transform: translateX(-50%);
-    padding: 10px 0;
-    border-bottom: 5px solid #149d6f;
-    line-height: 20px;
+  font-size: 16px;
+  width: 170px;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  border-bottom: 5px solid #149d6f;
+  line-height: 20px;
 }
 
-/* -----Second section----- */
+/* ---Lab--- */
 
 .lab {
     padding: 104px 0 78px;
@@ -324,8 +321,8 @@ button, button:hover, button:focus, button:active {
     margin: 7px 0 12px;
 }
 
-.business__title_red {
-	color: #b81c31;
+.business__title:first-letter {
+  color: #b81c31;
 }
 
 .business__text {
@@ -333,7 +330,7 @@ button, button:hover, button:focus, button:active {
     color: #404048;
 }
 
-/*-----Third section-----*/
+/*---Info---*/
 
 .info {
     padding: 38px 0 40px;
@@ -355,7 +352,8 @@ button, button:hover, button:focus, button:active {
 }
 
 .mission__info_left {
- 	max-width: 470px;
+   max-width: 470px;
+   margin-right: 15px;
 }
 
 .mission__info_right {
@@ -391,7 +389,7 @@ button, button:hover, button:focus, button:active {
     height: 56px;
     margin-right: 14px;
     pointer-events: none;
-    max-width: 100%;
+    object-fit: cover;
 }
 
 .news__info {
@@ -407,7 +405,7 @@ button, button:hover, button:focus, button:active {
 .news__title {
 	font-family: 'Museo Sans 700';
     font-size: 12px;
-    color: #cfd2d7;
+    color: #d0d3d8;
     margin-bottom: 14px;
 }
 
@@ -415,6 +413,15 @@ button, button:hover, button:focus, button:active {
     font-family: 'Museo Sans 100';
     font-size: 10px;
     color: #a2a8b3;
+}
+
+.news a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.news__title:hover {
+  color: #a2a8b3;
 }
 
 .mission__btn {
@@ -435,7 +442,7 @@ button, button:hover, button:focus, button:active {
 	background-color: #979daa;
 }
 
-/*------Fourth section------*/
+/*---Composition---*/
 
 .composition {
   padding: 38px 0 0;
@@ -485,7 +492,7 @@ button, button:hover, button:focus, button:active {
   border-bottom: 1px solid #a5a8af;
 }
 
-/*---------Footer------------*/
+/*---Footer---*/
 
 .footer {
   padding: 33px 0 43px;
@@ -495,6 +502,7 @@ button, button:hover, button:focus, button:active {
   font-size: 12px;
   font-weight: 100;
   line-height: 1.2em;
+  text-align: center;
 }
 
 .logo-footer {
