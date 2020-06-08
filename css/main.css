@@ -117,7 +117,7 @@ img {
   max-width: 1200px;
 }
 
-/*-------------Home page-------------*/
+/*-----------Home page-----------*/
 
 /* ---Header--- */
 
@@ -570,7 +570,7 @@ img {
   border-bottom: 1px solid #9c9da1;
 }
 
-/*-------About page-------*/
+/*---------About page---------*/
 
 /* ---Discribe--- */
 
@@ -716,7 +716,6 @@ img {
   font-size: 19px;
 }
 
-
 /* ---Presentation--- */
 
 .presentation {
@@ -752,7 +751,7 @@ img {
 	display: flex;
 }
 
-/*------------Services------------*/
+/*----------Services page----------*/
 
 /* ---Lawyer--- */
 
@@ -1014,5 +1013,5 @@ margin-bottom: 8px;
 }
 
 
-/*------------Contacts-------------*/
+/*----------Contacts page-----------*/
 
