@@ -177,10 +177,20 @@ img {
 	border-bottom: 2px solid #149d6f;
 }
 
+/* ---Offer--- */
+
 .offer {
   padding: 100px 0 132px;
   color: #081d42;
   border-bottom: 16px solid rgba(255, 255, 255, 0.15);
+}
+
+.offer__text {
+  font-family: 'Museo Sans 100';
+  font-size: 29px;
+  max-width: 463px;
+  margin: 13px 0 27px;
+  line-height: 1.2em;
 }
 
 .home-social {
