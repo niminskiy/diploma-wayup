@@ -123,8 +123,7 @@ img {
 
 .header {
 	position: relative;
-	background: url('../img/bg_header.png') no-repeat center / cover;
-	border-top: 5px solid #58647a;	
+	background: url('../img/bg_header.png') no-repeat center / cover;	
 }
 
 .header:before {
@@ -141,9 +140,11 @@ img {
 
 .navigation {
 	position: relative;
-	background-color: rgba(191,194,200,0.41);
-	box-shadow: 0 0 0 4px rgba(88,100,122,.1);
-	padding: 17px 0 5px;
+  background-color: rgba(191,194,200,0.41);
+  border-top: 5px solid #58647a;
+	box-shadow: 0 0 0 4px rgba(88,100,122,.08);
+  padding: 17px 0 5px;
+  
 }
 
 .menu__item a {
@@ -582,12 +583,19 @@ img {
 
 /*---------About page---------*/
 
+.navigation-inner {
+  background-color: rgba(191,194,200,0.41);
+  border-top: 5px solid #58647a;
+  border-bottom: 4px solid rgba(88,100,122,.08);
+  background-clip: padding-box;
+}
+
 /* ---Discribe--- */
 
 .describe {
   padding: 63px 0 71px;
   background-color: #fafafb;
-  border-top: 4px solid #f1f1f3;
+  /* border-top: 4px solid #f1f1f3; */
   color: #a1a6af;
 }
 
