@@ -146,6 +146,11 @@ img {
 	padding: 17px 0 5px;
 }
 
+/* .navigation_inner {
+  box-shadow: none;
+  border-bottom: 4px solid rgba(88,100,122,.08);
+} */
+
 .menu__item a {
 	font-family: 'Museo Sans 700';
 	font-size: 17px;
@@ -587,7 +592,7 @@ img {
 .describe {
   padding: 63px 0 71px;
   background-color: #fafafb;
-  border-top: 4px solid #f1f1f3;
+  border-top: 4px solid rgba(88,100,122,.08);
   color: #a1a6af;
 }
 
