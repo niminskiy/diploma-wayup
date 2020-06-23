@@ -1146,3 +1146,32 @@ margin-bottom: 8px;
 .coordinates__text:not(:last-child) {
   margin-bottom: 16px;
 }
+
+
+/*---------------Адаптация-------------------*/
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 90%;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.contaiter {
+		width: 90%;
+	}
+}	
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
