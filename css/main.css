@@ -345,7 +345,7 @@ button {
 
 .info {
     padding: 38px 0 40px;
-    background-color: #5a6679;
+    background: url('../img/bg_mission.png') no-repeat center / cover;
 }
 
 .info-title {
