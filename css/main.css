@@ -231,6 +231,10 @@ button {
   border-bottom: 2px solid #149d6f;
 }
 
+.burger {
+  margin-left: 36px;
+}
+
 /* ---Offer--- */
 
 .offer {
