@@ -646,7 +646,7 @@ button {
 
 /* ---Form--- */
 
-.booking {
+.modal-call {
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -655,66 +655,40 @@ button {
   box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
   background: #fff;
   padding: 50px 50px;
+  display: flex;
 }
 
-.booking__input {
+.modal-call__input {
   color: #acacac;
-  font-size: 13px;
+  font-size: 14px;
   width: 100%;
   padding: 12px 0 12px 0;
   letter-spacing: 0.02em;
   margin-bottom: 7px;
   border: 1px solid #fff;
   border-bottom: solid 1px #acacac;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Museo Sans 300';
   outline: none;
 }
 
-.booking__input:focus {
-  outline: none;
-  border-bottom: solid 1px #000;
-}
-
-.booking__input:focus::placeholder {
-  outline: none;
-  color: #000;
-}
-
-.booking__title {
-  font-size: 17px;
+.modal-call__title {
+  font-family: 'Museo Sans 700';
+  color: #081d42;
+  font-size: 21px;
   text-transform: none;
   margin-bottom: 14px;
 }
 
-.booking__text {
+.modal-call__text {
   line-height: 1.5em;
   margin-bottom: 19px;
 }
 
-.booking__btn {
-  font-family: 'Roboto', sans-serif;
-  background: #4acc4d;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
+.modal-call__btn {
+  margin-top: 30px;
   width: 100%;
-  border: 1px solid #4acc4d;
-  padding: 19px 65px 19px 65px;
-  border-radius: 5px;
-  margin: 18px 0;
-  cursor: pointer;
 }
 
-.booking__btn:cover {
-  color: #fff;
-  color: #2a9f2c;
-}
-
-.booking__conf {
-  font-size: 12px;
-  color: #acacac;
-}
 
 /*---------About page---------*/
 
