@@ -651,15 +651,30 @@ button {
 /* ---Form--- */
 
 .modal-call {
+  position: fixed;
+  margin-left: -150px;
+  left: 50%;
+  top: -100%;
+  padding: 20px;
+  z-index: 10;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 412px;
   border-radius: 5px;
-  box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
   background: #fff;
   padding: 50px 50px;
-  display: flex;
+  transition: all 0.5s ease-in;
+}
+
+.overflow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0,0,0,0.7);
+  
+  top: 0;
 }
 
 .modal-call__input {
@@ -692,6 +707,28 @@ button {
   margin-top: 30px;
   width: 100%;
 }
+
+/* ---модальное открываем/закрываем--- */
+
+/* .span {
+  cursor: pointer;
+} */
+
+/* .modal-call {
+  position: absolute;
+  width: 300px;
+  margin-left: -150px;
+  left: 50%;
+  top: -100%;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #333;
+  z-index: 9999;
+  transition: all 0.5s ease-in;
+} */
+
+
+
 
 
 /*---------About page---------*/
@@ -1267,21 +1304,17 @@ button {
 
 /* 768-992px */
 @media screen and (max-width: 992px) {
-  .container {
-    width: 90%;
-  }
+  
 }
 
 /* 576-768px */
 @media screen and (max-width: 768px) {
-  .contaiter {
-    width: 90%;
+  .burger {
+    margin-left: 23px;
   }
 }
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
-  .container {
-    width: 90%;
-  }
+  
 }
