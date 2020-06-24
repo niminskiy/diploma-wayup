@@ -61,10 +61,13 @@
 					<div class="col-lg-2">
 						<button class="btn">
 							<i class="fas fa-phone"></i>
-							<span class="button__name">
+							<span class="button__name" onclick="openWin();">
 								Заказать звонок
 							</span>
 						</button>
+						<div class="burger d-lg-none">
+							<img src="img/burger.png" alt="menu">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -506,5 +509,26 @@
 			</div>
 		</div>
 	</footer>
+	<!-- ---modal--- -->
+	<div class="modal-call d-flex">
+		<h3 class="modal-call__title">
+			Заказать обратный звонок
+		</h3>
+		<p class="modal-call__text">
+			Заполните форму и мы свяжемся с вами как можно скорее. До скорой встречи
+		</p>
+		<form action="#" class="modal-call__form">
+			<input class="modal-call__input text" type="text" placeholder="Имя" required>
+			<input class="modal-call__input e-mail" type="email" placeholder="E-mail" required>
+			<input class="modal-call__input tel" type="tel" placeholder="Телефон" required>
+			<button class="btn modal-call__btn">
+				<i class="fas fa-phone"></i>
+				<span class="button__name">
+					Заказать звонок
+				</span>
+			</button>
+		</form>
+	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
