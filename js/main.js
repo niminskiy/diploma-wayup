@@ -1,3 +1,5 @@
+'use strict';
+
 var modal = document.querySelector('.modal-call');
 var overflow = document.createElement('div');
 function openWin() {
