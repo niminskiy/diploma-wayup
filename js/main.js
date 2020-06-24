@@ -21,4 +21,4 @@ if (!Element.prototype.remove) {
 overflow.onclick = function () {
   modal.style.top = "-100%";
   overflow.remove();
-}
+};
