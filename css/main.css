@@ -1282,6 +1282,10 @@ button {
 /* 320-576px */
 @media screen and (max-width: 576px) {
   .container {
-    width: 90%;
+    width: 100%;
+  }
+
+  .burger {
+    margin-left: 20px;
   }
 }
