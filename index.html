@@ -41,28 +41,28 @@
 					<div class="col-lg-6 d-none d-lg-block">
 						<nav class="menu">
 							<ul class="menu__list d-flex justify-content-between">
-								<li class="menu__item">
+								<li>
 									<a href="about.html">О компании</a>
 								</li>
-								<li class="menu__item">
+								<li>
 									<a href="#">Пресс-центр</a>
 								</li>
-								<li class="menu__item">
-									<a href="services.html" target="_blank">Услуги</a>
+								<li>
+									<a href="services.html">Услуги</a>
 								</li>
-								<li class="menu__item">
+								<li>
 									<a href="#">Отрасли</a>
 								</li>
-								<li class="menu__item">
-									<a href="contacts.html" target="_blank">Контакты</a>
+								<li>
+									<a href="contacts.html">Контакты</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
-					<div class="d-flex col-auto ml-auto col-lg-2">
-						<button class="btn">
+					<div class="d-flex col-auto ml-auto col-lg-2 align-items-center">
+						<button class="btn header-btn" type="button" onclick="openWin();">
 							<i class="fas fa-phone"></i>
-							<span class="button__name" onclick="openWin();">
+							<span class="button__name">
 								Заказать звонок
 							</span>
 						</button>
@@ -75,85 +75,74 @@
 		</div>
 		<div class="offer">
 			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h1 class="offer__title">
-							LAB Consulting
-						</h1>
-						<p class="offer__text">
-							Ваш надежный партнер в области транспортно-логистического сопровождения
-						</p>
-						<ul class="home-social d-flex justify-content-between">
-							<li class="home-social__item_facebook">
-								<a href="#" class="home-social__link home-social__link_facebook" target="_blank"><i
-										class="fab fa-facebook-square"></i></a>
-							</li>
-							<li class="home-social__item_twitter">
-								<a href="#" class="home-social__link home-social__link_twitter" target="_blank"><i
-										class="fab fa-twitter"></i></a>
-							</li>
-							<li class="home-social__item_telegram">
-								<a href="#" class="home-social__link home-social__link_telegram" target="_blank"><i
-										class="fab fa-telegram-plane"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<h1 class="offer__title">
+					LAB Consulting
+				</h1>
+				<p class="offer__text">
+					Ваш надежный партнер в области транспортно-логистического сопровождения
+				</p>
+				<ul class="social d-flex justify-content-between">
+					<li class="social__item">
+						<a href="#" class="social__link social__link_facebook" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_twitter" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_telegram" target="_blank">
+							<i class="fab fa-telegram-plane"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
-	<section class="trust" id="trust">
+	<section class="trust text-center" id="trust">
 		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<h2 class="trust__title">
-						Мы заслужили доверие
-					</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="question">
-						<div class="question__circle">
-							<img src="img/lamp.png" alt="Light" class="question__icon">
-						</div>
-						<h4 class="question__title ">
-							Что мы предлагаем?
-						</h4>
-						<p class="question__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-							dolore
-							magna aliqua
-						</p>
+			<h2 class="trust__title">
+				Мы заслужили доверие
+			</h2>
+			<div class="row trust__list">
+				<div class="col-md-6 col-lg-4 trust__item">
+					<div class="trust__icon">
+						<img src="img/lamp.png" alt="Light">
 					</div>
+					<h4 class="trust__heading">
+						Что мы предлагаем?
+					</h4>
+					<p class="trust__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore
+						magna aliqua
+					</p>
 				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="question">
-						<div class="question__circle">
-							<img src="img/cube.png" alt="Light" class="question__icon">
-						</div>
-						<h4 class="question__title">
-							Как мы работаем?
-						</h4>
-						<p class="process__text">
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-							rem aperiam, eaque ipsa quae ab ill
-						</p>
+				<div class="col-md-6 col-lg-4 trust__item">
+					<div class="trust__icon">
+						<img src="img/cube.png" alt="Box">
 					</div>
+					<h4 class="trust__heading">
+						Как мы работаем?
+					</h4>
+					<p class="trust__text">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+						rem aperiam, eaque ipsa quae ab ill
+					</p>
 				</div>
-				<div class="col-lg-4">
-					<div class="question">
-						<div class="question__circle">
-							<img src="img/star.png" alt="Light" class="question__icon">
-						</div>
-						<h4 class="question__title">
-							Почему мы?
-						</h4>
-						<p class="question__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua
-						</p>
+				<div class="col-md-6 col-lg-4 trust__item">
+					<div class="trust__icon">
+						<img src="img/star.png" alt="Star">
 					</div>
+					<h4 class="trust__heading">
+						Почему мы?
+					</h4>
+					<p class="trust__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua
+					</p>
 				</div>
 			</div>
 			<a href="#info" class="btn btn_more">
@@ -163,47 +152,41 @@
 	</section>
 	<section class="lab">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="business">
-						<span class="business__circle">
-							L
-						</span>
-						<h3 class="business__title">
-							Legal
-						</h3>
-						<p class="business__text">
-							But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
-							I will give you a complete account of the system, and expound the actual teachings of the great explorer
-							of the truth
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="business">
-						<span class="business__circle">
-							A
-						</span>
-						<h3 class="business__title">
-							<span class="business__title_red">A</span>ccounting
-						</h3>
-						<p class="business__text">
-							But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
-							I will give you a complete account of the system, and expound the actual teachings of the great explorer
-							of the truth
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="business">
-						<span class="business__circle">
-							B
-						</span>
-					</div>
-					<h3 class="business__title">
-						<span class="business__title_red">B</span>usiness
+			<div class="row lab__list">
+				<div class="col-lg-4 lab__item">
+					<span class="lab__icon">
+						L
+					</span>
+					<h3 class="lab__heading">
+						Legal
 					</h3>
-					<p class="business__text">
+					<p>
+						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+						I will give you a complete account of the system, and expound the actual teachings of the great explorer
+						of the truth
+					</p>
+				</div>
+				<div class="col-lg-4 lab__item">
+					<span class="lab__icon">
+						A
+					</span>
+					<h3 class="lab__heading">
+						Accounting
+					</h3>
+					<p>
+						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+						I will give you a complete account of the system, and expound the actual teachings of the great explorer
+						of the truth
+					</p>
+				</div>
+				<div class="col-lg-4 lab__item">
+					<span class="lab__icon">
+						B
+					</span>
+					<h3 class="lab__heading">
+						Business
+					</h3>
+					<p>
 						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
 						will give you a complete account of the system, and expound the actual teachings of the great explorer of
 						the truth
@@ -218,18 +201,18 @@
 			<div class="row">
 				<div class="col-lg-9">
 					<div class="mission">
-						<h3 class="info-title">
+						<h3 class="info__title">
 							Миссия LAB Consulting
 						</h3>
 						<div class="mission__cont d-sm-flex justify-content-between">
 							<div class="mission__info mission__info_left">
-								<p class="mission__text">
+								<p>
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 									totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
 									sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
 									consequuntur magni dolores.
 								</p>
-								<p class="mission__text">
+								<p>
 									Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
 									amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
 									magnam aliquam quaerat voluptatem.
@@ -237,12 +220,12 @@
 								<a href="#" class="mission__btn">Узнать больше</a>
 							</div>
 							<div class="mission__info mission__info_right">
-								<p class="mission__text">
+								<p>
 									Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
 									amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
 									magnam aliquam quaerat voluptatem.
 								</p>
-								<p class="mission__text">
+								<p>
 									Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
 									aliquid ex ea commodi consequatur?
 								</p>
@@ -251,24 +234,24 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<h3 class="info-title">
+					<h3 class="info__title">
 						Новости
 					</h3>
 					<ul class="news">
 						<li class="news__list d-flex align-items-center align-items-lg-start">
-							<a href="#" class="news__foto" target="_blank">
+							<a href="#" class="news__foto">
 								<img src="img/truck.png" class="news__img" alt="Foto">
 							</a>
-							<a href="#" class="news__info" target="_blank">
+							<a href="#" class="news__info">
 								<h6 class="news__title">LAB Consulting запускает новое направление в своих услугах</h6>
 								<time class="news__date">02.02.2015</time>
 							</a>
 						</li>
 						<li class="news__list d-flex align-items-center align-items-lg-start">
-							<a href="#" class="news__foto" target="_blank">
+							<a href="#" class="news__foto">
 								<img src="img/truck.png" class="news__img" alt="Foto">
 							</a>
-							<a href="#" class="news__info" target="_blank">
+							<a href="#" class="news__info">
 								<h6 class="news__title">LAB Consulting запускает новое направление в своих услугах</h6>
 								<time class="news__date">02.02.2015</time>
 							</a>
@@ -289,192 +272,143 @@
 	</section>
 	<section class="composition text-center text-md-left" id="composition">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">О компании</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Видение, миссия и ценности
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Преимущества
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Клиенты
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Партнеры
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Контакты
-								</a>
-							</li>
-						</ul>
+			<h2>Карта сайта</h2>
+			<nav>
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">О компании</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Видение, миссия и ценности</a>
+								</li>
+								<li>
+									<a href="#">Преимущества</a>
+								</li>
+								<li>
+									<a href="#">Клиенты</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12  col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">Пресс – центр</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Публикации</a>
+								</li>
+								<li>
+									<a href="#">Мероприятия</a>
+								</li>
+								<li>
+									<a href="#">Консультация эксперта</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12  col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">Услуги</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Legal (Юридическое сопровождение)</a>
+								</li>
+								<li>
+									<a href="#">Accounting ( Финансовый аутсорсинг)</a>
+								</li>
+								<li>
+									<a href="#">Business Consulting (Бизнес консалтинг)</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12  col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">Отрасли</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Аграрный сектор</a>
+								</li>
+								<li>
+									<a href="#">Внешнеэкономическая деятельность</a>
+								</li>
+								<li">
+									<a href="#">ИT – бизнес</a>
+									</li>
+									<li>
+										<a href="#">Оптовая и розничная торговля</a>
+									</li>
+									<li>
+										<a href="#">Сфера услуг</a>
+									</li>
+									<li>
+										<a href="#">Транспорт и Логистика</a>
+									</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12  col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">Образовательный центр</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Про Образовательный Центр</a>
+								</li>
+								<li>
+									<a href="#">Бизнес-тренинги, семинары, круглые столы</a>
+								</li>
+								<li>
+									<a href="#">Преимущества</a>
+								</li>
+								<li>
+									<a href="#">Alumni</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12  col-md-6 col-lg-4">
+						<div class="site-map">
+							<a href="#">
+								<h5 class="page-title">Соц. предпринимательство</h5>
+							</a>
+							<ul class="specific">
+								<li>
+									<a href="#">Социальная миссия</a>
+								</li>
+								<li>
+									<a href="#">Проекты</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Консультация эксперта</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-12  col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">Пресс – центр</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Новости
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Публикации
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Мероприятия
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Консультация эксперта
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12  col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">Услуги</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Legal (Юридическое сопровождение)
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Accounting ( Финансовый аутсорсинг)
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Business Consulting (Бизнес консалтинг)
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12  col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">Отрасли</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Аграрный сектор
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Внешнеэкономическая деятельность
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									ИT – бизнес
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Оптовая и розничная торговля
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Сфера услуг
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Транспорт и Логистика
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12  col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">Образовательный центр</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Про Образовательный Центр
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Бизнес-тренинги, семинары, круглые столы
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Преимущества
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Alumni
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-sm-12  col-md-6 col-lg-4">
-					<div class="site-map">
-						<a href="#">
-							<h5 class="page-title">Соц. предпринимательство</h5>
-						</a>
-						<ul class="specific">
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Социальная миссия
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Проекты
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Партнеры
-								</a>
-							</li>
-							<li class="specific__item">
-								<a href="#" class="specific__link">
-									Консультация эксперта
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			</nav>
 		</div>
 	</section>
 	<footer class="footer" id="footer">
@@ -485,7 +419,7 @@
 						<img src="img/logo_footer.png" alt="LAB Consulting" class="logo-footer-img ">
 					</a>
 				</div>
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-md-4 col-lg-3">
 					<div class="communication">
 						<p class="communication__text">
 							Вы хотите сотрудничать с нами?
@@ -509,7 +443,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-md-4 col-lg-3">
 					<div class="site d-flex align-items-center">
 						<span class="site__letter">
 							W
@@ -533,9 +467,9 @@
 						<a href="#" class="copy__link">lab-consult.com</a>
 					</div>
 				</div>
-				<div class="col-sm-12 d-md-none d-lg-block col-lg-2 d-flex justify-content-end align-items-center">
+				<div class="d-md-none d-lg-block col-lg-2 d-flex justify-content-end align-items-center">
 					<button type="button" class="btn btn_footer">
-						<i class="fas fa-phone home__phone"></i>
+						<i class="fas fa-phone"></i>
 						<span>
 							Заказать звонок
 						</span>
@@ -566,4 +500,5 @@
 	</div>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

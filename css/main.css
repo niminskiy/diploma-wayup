@@ -43,6 +43,7 @@ body {
   color: #404048;
   padding: 0;
   margin: 0;
+  min-width: 320px;
 }
 
 body,
@@ -200,7 +201,7 @@ button {
   border-bottom: 4px solid rgba(88,100,122,.08);
 } */
 
-.menu__item a {
+.menu__list a {
   font-family: 'Museo Sans 700';
   font-size: 17px;
   color: #3f4b60;
@@ -208,7 +209,7 @@ button {
   border-bottom: 2px solid transparent;
 }
 
-.menu__item a:hover {
+.menu__list a:hover {
   color: #b81c31;
   border-bottom: 2px solid #b81c31;
 }
@@ -232,12 +233,13 @@ button {
 }
 
 .burger {
-  margin-left: 36px;
+  margin-left: 22px;
 }
 
 /* ---Offer--- */
 
 .offer {
+  position: relative;
   padding: 100px 0 132px;
   color: #081d42;
   border-bottom: 16px solid rgba(255, 255, 255, 0.15);
@@ -255,7 +257,7 @@ button {
   line-height: 1.2em;
 }
 
-.home-social {
+.social {
   background: rgba(235, 229, 232, 0.8);
   border: 3px solid rgba(233, 240, 252, 0.6);
   border-radius: 5px;
@@ -263,56 +265,56 @@ button {
   padding: 8px 18px;
 }
 
-.home-social__link {
+.social__link {
   padding: 0 6px;
   font-size: 17px;
 }
 
-.home-social__link_facebook {
+.social__link_facebook {
   color: #3d6ca8;
 }
 
-.home-social__item_facebook {
+.social__item_facebook {
   border: 2px solid #3d6ca8;
 }
 
-.home-social__item_twitter {
+.social__item_twitter {
   border: 2px solid #17c0ff;
 }
 
-.home-social__item_telegram {
+.social__item_telegram {
   border: 2px solid #25a3d4;
 }
 
-.home-social__link_twitter {
+.social__link_twitter {
   color: #17c0ff;
 }
 
-.home-social__link_telegram {
+.social__link_telegram {
   color: #25a3d4;
 }
 
-.home-social__link_facebook a {
+.social__link_facebook a {
   color: #3d6ca8;
 }
 
-.home-social__link_twitter a {
+.social__link_twitter a {
   color: #17c0ff;
 }
 
-.home-social__link_telegram a {
+.social__link_telegram a {
   color: #25a3d4;
 }
 
-.home-social__link_facebook:hover {
+.social__link_facebook:hover {
   color: #3d6ca8;
 }
 
-.home-social__link_twitter:hover {
+.social__link_twitter:hover {
   color: #17c0ff;
 }
 
-.home-social__link_telegram:hover {
+.social__link_telegram:hover {
   color: #25a3d4;
 }
 
@@ -331,12 +333,12 @@ button {
   margin-bottom: 41px;
 }
 
-.question {
+.trust__item {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.question__circle {
+.trust__icon {
   margin: 0 auto;
   width: 118px;
   height: 118px;
@@ -345,12 +347,12 @@ button {
   border-radius: 50%;
 }
 
-.question__title {
+.trust__heading {
   font-size: 21px;
   margin: 21px 0 9px;
 }
 
-.question__text {
+.trust__text {
   letter-spacing: 0.02em;
   line-height: 1.3em;
 }
@@ -374,7 +376,7 @@ button {
   background-color: #fff;
 }
 
-.business__circle {
+.lab__icon {
   font-family: 'Museo Sans 100';
   font-size: 50px;
   border-radius: 50%;
@@ -388,18 +390,18 @@ button {
   color: #fff;
 }
 
-.business__title {
+.lab__heading {
   font-family: 'Museo Sans 100';
   font-size: 23px;
   text-align: center;
   margin: 7px 0 12px;
 }
 
-.business__title:first-letter {
+.lab__heading:first-letter {
   color: #b81c31;
 }
 
-.business__text {
+.lab__item p {
   text-align: center;
   color: #404048;
 }
@@ -411,7 +413,7 @@ button {
   background: url('../img/bg_mission.png') no-repeat center / cover;
 }
 
-.info-title {
+.info__title {
   color: #a7acb6;
   font-size: 23px;
   padding-bottom: 13px;
@@ -419,7 +421,7 @@ button {
   border-bottom: 3px solid #6f7a8c;
 }
 
-.mission__text {
+.mission__info p {
   color: #d1d4d8;
   font-size: 15px;
   line-height: 1.2em;
@@ -523,6 +525,10 @@ button {
   background-color: #3a4456;
 }
 
+.composition h2 {
+  display: none;
+}
+
 .page-link {
   margin-bottom: 40px;
 }
@@ -548,21 +554,20 @@ button {
   text-decoration: none;
 }
 
-.specific__link {
+.specific ul {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.specific a {
   color: #a5a8af;
+  text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 1px;
   transition: all .6s ease;
 }
 
-.specific__item {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.specific__link:hover {
-  color: #a5a8af;
-  text-decoration: none;
+.specific a:hover {
   border-bottom: 1px solid #a5a8af;
 }
 
@@ -1277,26 +1282,38 @@ button {
 /*---------------Адаптация-------------------*/
 
 /* 992-1200px */
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1199px) {}
 
 /* 768-992px */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 991px) {}
 
 /* 576-768px */
-@media screen and (max-width: 768px) {
-  .burger {
-    margin-left: 23px;
+@media screen and (max-width: 767px) {}
+
+/* 470-576px */
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
   }
 }
 
-/* 320-576px */
-@media screen and (max-width: 576px) {
+/* 320-470px */
+@media screen and (max-width: 470px) {
   .container {
     width: 100%;
   }
 
-  .burger {
-    margin-left: 20px;
+  .button__name {
+    display: none;
   }
 
+  .header-btn {
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .navigation .logo {
+    min-width: 180px;
+    display: block;
+  }
 }
