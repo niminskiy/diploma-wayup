@@ -266,56 +266,34 @@ button {
 }
 
 .social__link {
-  padding: 0 6px;
   font-size: 17px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #3d6ca8;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link:hover {
+  color: #b81c31;
+  border-color: #b81c31;
+  background-color: #fff;
 }
 
 .social__link_facebook {
   color: #3d6ca8;
-}
-
-.social__item_facebook {
-  border: 2px solid #3d6ca8;
-}
-
-.social__item_twitter {
-  border: 2px solid #17c0ff;
-}
-
-.social__item_telegram {
-  border: 2px solid #25a3d4;
+  border-color: #3d6ca8;
 }
 
 .social__link_twitter {
-  color: #17c0ff;
+  color: #43c9fd;
+  border-color: #43c9fd;
 }
 
 .social__link_telegram {
   color: #25a3d4;
-}
-
-.social__link_facebook a {
-  color: #3d6ca8;
-}
-
-.social__link_twitter a {
-  color: #17c0ff;
-}
-
-.social__link_telegram a {
-  color: #25a3d4;
-}
-
-.social__link_facebook:hover {
-  color: #3d6ca8;
-}
-
-.social__link_twitter:hover {
-  color: #17c0ff;
-}
-
-.social__link_telegram:hover {
-  color: #25a3d4;
+  border-color: #25a3d4;
 }
 
 
@@ -323,7 +301,7 @@ button {
 
 .trust {
   background-color: #f1f1f3;
-  padding: 52px 0 90px;
+  padding: 52px 0 40px;
   position: relative;
   text-align: center;
 }
@@ -335,7 +313,7 @@ button {
 
 .trust__item {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 .trust__icon {
@@ -372,8 +350,12 @@ button {
 /* ---Lab--- */
 
 .lab {
-  padding: 104px 0 78px;
+  padding: 104px 0 32px;
   background-color: #fff;
+}
+
+.lab__item {
+  margin-bottom: 46px;
 }
 
 .lab__icon {
@@ -474,7 +456,7 @@ button {
   font-weight: 700;
   display: inline-block;
   line-height: 1.1;
-  max-width: 183px;
+  /* max-width: 183px; */
   text-decoration: none;
 }
 
@@ -494,6 +476,10 @@ button {
 .news a {
   text-decoration: none;
   border-bottom: 1px solid transparent;
+}
+
+.news__foto {
+  flex-shrink: 0;
 }
 
 .news__title:hover {
@@ -1285,10 +1271,19 @@ button {
 @media screen and (max-width: 1199px) {}
 
 /* 768-992px */
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+  .mission__info {
+    max-width: 100%;
+  }
+}
 
 /* 576-768px */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    /* max-width: 724px; */
+  }
+}
 
 /* 470-576px */
 @media screen and (max-width: 575px) {
@@ -1301,6 +1296,7 @@ button {
 @media screen and (max-width: 470px) {
   .container {
     width: 100%;
+    /* max-width: 444px; */
   }
 
   .button__name {
