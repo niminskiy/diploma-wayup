@@ -1274,6 +1274,7 @@ button {
 @media screen and (max-width: 991px) {
   .mission__info {
     max-width: 100%;
+    margin-bottom: 46px;
   }
 }
 
