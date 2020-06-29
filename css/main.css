@@ -395,7 +395,7 @@ button {
   background: url('../img/bg_mission.png') no-repeat center / cover;
 }
 
-.info__title {
+.info-titles {
   color: #a7acb6;
   font-size: 23px;
   padding-bottom: 13px;
@@ -435,7 +435,7 @@ button {
   content: '';
   display: block;
   border-bottom: 1px solid #6c778b;
-  max-width: 490px;
+  max-width: 270px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -456,7 +456,6 @@ button {
   font-weight: 700;
   display: inline-block;
   line-height: 1.1;
-  /* max-width: 183px; */
   text-decoration: none;
 }
 
@@ -471,11 +470,6 @@ button {
   font-family: 'Museo Sans 100';
   font-size: 10px;
   color: #a2a8b3;
-}
-
-.news a {
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
 }
 
 .news__foto {
@@ -526,18 +520,15 @@ button {
   margin-bottom: 14px;
   display: block;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .page-title:hover {
-  color: #babcc1;
+  color: #b81c31;
 }
 
 .site-map {
   margin-bottom: 45px;
-}
-
-.site-map a {
-  text-decoration: none;
 }
 
 .specific ul {
@@ -547,7 +538,6 @@ button {
 
 .specific a {
   color: #a5a8af;
-  text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 1px;
   transition: all .6s ease;
@@ -1275,6 +1265,10 @@ button {
   .mission__info {
     max-width: 100%;
     margin-bottom: 46px;
+  }
+
+  .news__list:after {
+    max-width: 100%;
   }
 }
 
