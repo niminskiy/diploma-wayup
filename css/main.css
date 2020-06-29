@@ -192,8 +192,13 @@ button {
   background-color: rgba(191, 194, 200, 0.41);
   border-top: 5px solid #58647a;
   box-shadow: 0 0 0 4px rgba(88, 100, 122, .08);
-  padding: 17px 0 5px;
+  padding: 12px 0 5px;
 
+}
+
+.logo {
+  display: block;
+  margin-top: 6px;
 }
 
 /* .navigation_inner {
@@ -301,7 +306,7 @@ button {
 
 .trust {
   background-color: #f1f1f3;
-  padding: 52px 0 40px;
+  padding: 52px 0 50px;
   position: relative;
   text-align: center;
 }
@@ -350,7 +355,7 @@ button {
 /* ---Lab--- */
 
 .lab {
-  padding: 104px 0 32px;
+  padding: 104px 0 30px;
   background-color: #fff;
 }
 
@@ -386,12 +391,14 @@ button {
 .lab__item p {
   text-align: center;
   color: #404048;
+  letter-spacing: .02em;
+  line-height: 1.3em;
 }
 
 /*---Info---*/
 
 .info {
-  padding: 38px 0 40px;
+  padding: 38px 0 46px;
   background: url('../img/bg_mission.png') no-repeat center / cover;
 }
 
@@ -409,6 +416,10 @@ button {
   line-height: 1.2em;
 }
 
+.mission__info p:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+
 .mission__info_left {
   max-width: 470px;
   margin-right: 15px;
@@ -419,16 +430,16 @@ button {
 }
 
 .mission__text:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .news__list {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   position: relative;
 }
 
 .news__list:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .news__list:after {
@@ -461,9 +472,9 @@ button {
 
 .news__title {
   font-family: 'Museo Sans 700';
-  font-size: 12px;
+  font-size: 13px;
   color: #d0d3d8;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .news__date {
@@ -489,7 +500,7 @@ button {
   text-align: center;
   font-weight: 700;
   display: inline-block;
-  margin-top: 23px;
+  margin-top: 40px;
 }
 
 .mission__btn:hover {
@@ -557,7 +568,6 @@ button {
   font-size: 12px;
   font-weight: 100;
   line-height: 1.2em;
-  text-align: center;
 }
 
 .logo-footer {
@@ -1260,6 +1270,8 @@ button {
 /* 992-1200px */
 @media screen and (max-width: 1199px) {}
 
+
+
 /* 768-992px */
 @media screen and (max-width: 991px) {
   .mission__info {
@@ -1270,6 +1282,10 @@ button {
   .news__list:after {
     max-width: 100%;
   }
+
+  .logo-footer {
+    margin-top: 0;
+  }
 }
 
 /* 576-768px */
@@ -1277,6 +1293,28 @@ button {
   .container {
     width: 100%;
     /* max-width: 724px; */
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .communication {
+    margin: 20px 0 26px;
+  }
+
+  .address {
+    margin-bottom: 26px;
+  }
+
+  .site {
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .copy {
+    margin-bottom: 38px;
   }
 }
 
