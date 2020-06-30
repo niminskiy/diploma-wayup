@@ -1271,7 +1271,6 @@ button {
 @media screen and (max-width: 1199px) {}
 
 
-
 /* 768-992px */
 @media screen and (max-width: 991px) {
   .mission__info {
@@ -1292,7 +1291,6 @@ button {
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
-    /* max-width: 724px; */
   }
 
   .footer {
@@ -1329,7 +1327,6 @@ button {
 @media screen and (max-width: 470px) {
   .container {
     width: 100%;
-    /* max-width: 444px; */
   }
 
   .button__name {
