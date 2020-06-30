@@ -33,12 +33,12 @@
 		<div class="navigation-inner">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-lg-4">
-						<a href="index.html" class="logo__img">
-							<img src="img/logo.png" alt="LAB Consulting" class="nav-logo">
+					<div class="col-lg-4 col-6">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="LAB Consulting" class="logo__img">
 						</a>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 d-none d-lg-block">
 						<nav class="menu d-none d-lg-block">
 							<ul class="menu__list d-flex justify-content-between">
 								<li>
@@ -59,16 +59,16 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-lg-2">
-						<button class="btn" type="button" onclick="openWin();">
+					<div class="d-flex col-auto ml-auto col-lg-2 align-items-center">
+						<button class="btn header-btn" type="button" onclick="openWin();">
 							<i class="fas fa-phone"></i>
 							<span class="button__name">
 								Заказать звонок
 							</span>
 						</button>
-						<div class="burger d-lg-none">
-							<img src="img/burger.png" alt="menu">
-						</div>
+						<button class="burger-btn d-lg-none">
+							<span></span>
+						</button>
 					</div>
 				</div>
 			</div>
