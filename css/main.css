@@ -201,11 +201,6 @@ button {
   margin-top: 6px;
 }
 
-/* .navigation_inner {
-  box-shadow: none;
-  border-bottom: 4px solid rgba(88,100,122,.08);
-} */
-
 .menu__list a {
   font-family: 'Museo Sans 700';
   font-size: 17px;
@@ -741,7 +736,6 @@ button {
 .describe {
   padding: 63px 0 71px;
   background-color: #fafafb;
-  border-top: 4px solid rgba(88, 100, 122, .08);
   color: #a1a6af;
 }
 
@@ -769,8 +763,7 @@ button {
   border-bottom: 1px solid #5f697d;
 }
 
-.breadcrumbs__link:not(:last-child):after {
-  content: '\2192';
+.breadcrumbs__symbol {
   margin: 0 4px 0 5px;
 }
 
