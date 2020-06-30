@@ -175,7 +175,7 @@ button {
   background: url('../img/bg_header.png') no-repeat center / cover;
 }
 
-.header:before {
+.header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -237,9 +237,35 @@ button {
   border-bottom: 2px solid #149d6f;
 }
 
-.burger {
+
+/* ---burger--- */
+
+.burger-btn {
+  position: relative;
   margin-left: 22px;
-  background: none;
+  background: #3f4b60;
+}
+
+.burger-btn span,
+.burger-btn span::before,
+.burger-btn span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  margin-left: -11px;
+  width: 22px;
+  height: 4px;
+  background-color: #3f4b60;
+}
+
+.burger-btn span::before {
+  transform: translateY(-8px);
+}
+
+.burger-btn span::after {
+  transform: translateY(8px);
 }
 
 /* ---Offer--- */
