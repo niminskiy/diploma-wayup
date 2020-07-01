@@ -813,18 +813,17 @@ button {
   font-size: 15px;
   font-weight: 300;
   color: #404048;
-  margin: 28px 0 53px;
+  margin: 28px 0 50px;
   line-height: 1.2em;
   letter-spacing: 0.02em;
-  padding: 15px 0 15px;
 }
 
 .privilege-text__left {
-  width: 50%;
+  max-width: 49%;
 }
 
 .privilege-text__right {
-  width: 49%;
+  max-width: 49%;
 }
 
 /* ---Summary--- */
@@ -1391,7 +1390,10 @@ span:last-child {
   .logo-footer {
     margin-top: 0;
   }
+
+
 }
+
 
 /* 576-768px */
 @media screen and (max-width: 767px) {
@@ -1419,6 +1421,12 @@ span:last-child {
 
   .copy {
     margin-bottom: 38px;
+  }
+
+  .privilege-text__left,
+  .privilege-text__right {
+    max-width: 100%;
+    margin-bottom: 28px;
   }
 }
 
