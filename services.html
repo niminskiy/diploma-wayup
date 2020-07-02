@@ -38,35 +38,33 @@
 							<img src="img/logo.png" alt="LAB Consulting" class="logo__img">
 						</a>
 					</div>
-					<div class="col-lg-6 d-none d-lg-block">
-						<nav class="menu d-none d-lg-block">
-							<ul class="menu__list d-flex justify-content-between">
-								<li>
-									<a href="#">О компании</a>
-								</li>
-								<li>
-									<a href="#">Пресс-центр</a>
-								</li>
-								<li>
-									<a href="services.html">Услуги</a>
-								</li>
-								<li>
-									<a href="#">Отрасли</a>
-								</li>
-								<li>
-									<a href="contacts.html">Контакты</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
+					<nav class="menu col-lg-6" id="menu">
+						<ul class="menu__list d-flex justify-content-lg-between">
+							<li>
+								<a href="about.html">О компании</a>
+							</li>
+							<li>
+								<a href="#">Пресс-центр</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Отрасли</a>
+							</li>
+							<li>
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 					<div class="d-flex col-auto ml-auto col-lg-2 align-items-center">
-						<button class="btn header-btn" type="button" onclick="openWin();">
+						<button class="btn header-btn open-window" type="button">
 							<i class="fas fa-phone"></i>
 							<span class="button__name">
 								Заказать звонок
 							</span>
 						</button>
-						<button class="burger-btn d-lg-none">
+						<button class="burger-btn d-lg-none" id="burger">
 							<span></span>
 						</button>
 					</div>
@@ -463,7 +461,7 @@
 					</div>
 				</div>
 				<div class="d-md-none d-lg-block col-lg-2 d-flex align-items-center">
-					<button type="button" class="btn btn_footer">
+					<button type="button" class="btn btn_footer open-window">
 						<i class="fas fa-phone"></i>
 						<span>
 							Заказать звонок

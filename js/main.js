@@ -3,6 +3,7 @@
 //---modal---
 var modal = document.querySelector('.modal-call');
 var overflow = document.createElement('div');
+var btns = document.querySelectorAll('.open-window');
 
 function openWin() {
   overflow.className = "overflow-call";
@@ -24,6 +25,19 @@ overflow.onclick = function () {
   modal.style.top = "-100%";
   overflow.remove();
 };
+
+btns.forEach(function(btn) {
+  btn.addEventListener('click', openWin);
+});
+
+//---burger menu---
+
+let burger = document.getElementById('burger');
+let menu = document.getElementById('menu');
+
+burger.addEventListener('click', function() {
+  menu.classList.toggle('active');
+});
 
 //---slider---
 const prev = document.getElementById('btn-prev'),
