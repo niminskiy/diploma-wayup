@@ -26,7 +26,7 @@ overflow.onclick = function () {
   overflow.remove();
 };
 
-btns.forEach(function(btn) {
+btns.forEach(function (btn) {
   btn.addEventListener('click', openWin);
 });
 
@@ -35,8 +35,9 @@ btns.forEach(function(btn) {
 let burger = document.getElementById('burger');
 let menu = document.getElementById('menu');
 
-burger.addEventListener('click', function() {
+burger.addEventListener('click', function () {
   menu.classList.toggle('active');
+  //this.classList.toggle('active');
 });
 
 //---slider---
