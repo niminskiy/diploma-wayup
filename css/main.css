@@ -350,8 +350,17 @@ button {
   width: 118px;
   height: 118px;
   line-height: 113px;
-  background-color: #c8cbdb;
   border-radius: 50%;
+}
+
+.trust__icon_light {
+  background: #c8cbdb url(../img/lamp.png) no-repeat center;
+}
+.trust__icon_box {
+  background: #c8cbdb url(../img/cube.png) no-repeat center;
+}
+.trust__icon_star {
+  background: #c8cbdb url(../img/star.png) no-repeat center;
 }
 
 .trust__heading {
@@ -1465,6 +1474,10 @@ span:last-child {
 
   .footer {
     text-align: center;
+  }
+
+  .logo-footer {
+    display: inline-block;
   }
   
   .communication {
