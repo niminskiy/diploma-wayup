@@ -198,6 +198,7 @@ button {
 }
 
 .logo {
+  max-width: 290px;
   display: block;
   margin-top: 6px;
 }
@@ -594,9 +595,9 @@ button {
 }
 
 .logo-footer {
+  max-width: 290px;
   margin-top: -33px;
 }
-
 .site__letter {
   font-size: 15px;
   font-weight: 100;
@@ -916,6 +917,10 @@ button {
 .gallery:hover .gallery__link {
   color: #fff;
   opacity: 1;
+}
+
+.logo-footer {
+
 }
 
 /* ---start slider--- */
@@ -1461,11 +1466,11 @@ span:last-child {
   .gallery {
     max-width: 100%;
   }
-  
+
   .footer {
     text-align: center;
   }
-
+  
   .communication {
     margin: 20px 0 26px;
   }
