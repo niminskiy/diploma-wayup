@@ -1458,7 +1458,10 @@ span:last-child {
   .summary__circle {
     margin: 32px 54px 32px 0;
   }
-
+  .gallery {
+    max-width: 100%;
+  }
+  
   .footer {
     text-align: center;
   }
