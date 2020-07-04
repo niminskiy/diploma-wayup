@@ -4,7 +4,7 @@
 window.onload = function () {
   let preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
-}
+};
 
 //---modal---
 let modal = document.querySelector('.modal-call');
