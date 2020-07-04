@@ -1218,8 +1218,8 @@ span:last-child {
 
 .all {
   background-color: #fafafb;
-  padding: 50px 0 0 26px;
   height: 100%;
+  padding: 48px 0 105px 0px;
 }
 
 .guidance {
@@ -1292,13 +1292,13 @@ span:last-child {
 }
 
 .review__name {
+  font-family: 'Museo Sans 700';
   font-size: 16px;
-  font-weight: 700;
   color: #747487;
   margin: 17px 0 17px;
 }
 
-.review__text {
+.review p {
   font-size: 13px;
   font-weight: 300;
   color: #404048;
@@ -1307,13 +1307,100 @@ span:last-child {
   margin: 0 auto;
 }
 
-.review__link {
+.review a {
   color: #2c60a0;
   font-size: 16px;
   margin: 15px 0 20px;
   display: block;
 }
 
+/* ---slider start--- */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-prev {
+  z-index: 15;
+  top: 14%;
+  left: 9%;
+}
+
+.slick-arrow {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #404048;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+.slick-next {
+  top: 14%;
+  right: 9%;
+}
+
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+.slick-dots {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin-right: 17px;
+}
+
+.slick-active,
+.slick-current,
+.slick-cloned,
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background: #8b9ab7;
+}
+
+.slick-dots li button {
+  background: #bdc5d6;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---slider end--- */
 
 /*----------Contacts page-----------*/
 

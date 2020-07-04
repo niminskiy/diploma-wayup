@@ -1,12 +1,15 @@
 'use strict';
 
 //---perloader---
+
 window.onload = function () {
   let preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
 };
 
+
 //---modal---
+
 let modal = document.querySelector('.modal-call');
 let overflow = document.createElement('div');
 let btns = document.querySelectorAll('.open-window');
@@ -36,81 +39,87 @@ btns.forEach(function (btn) {
   btn.addEventListener('click', openWin);
 });
 
-// //---burger menu---
 
-// let burger = document.getElementById('burger');
-// let menu = document.getElementById('menu');
+//---burger menu---
 
-// burger.addEventListener('click', function () {
-//   menu.classList.toggle('active');
-//   this.classList.toggle('active');
-// });
+let burger = document.getElementById('burger');
+let menu = document.getElementById('menu');
 
-//---slider---
-// const prev = document.getElementById('btn-prev'),
-//   next = document.getElementById('btn-next'),
-//   slides = document.querySelectorAll('.slide'),
-//   dots = document.querySelectorAll('.dot');
+burger.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  this.classList.toggle('active');
+});
 
-// let index = 0;
 
-// const activeSlide = n => {
-//   let slide;
-//   for (slide of slides) {
-//     slide.classList.remove('active');
-//   }
-//   slides[n].classList.add('active');
-// };
+//---slider presentation---
 
-// const activeDot = n => {
-//   let dot;
-//   for (dot of dots) {
-//     dot.classList.remove('active');
-//   }
-//   dots[n].classList.add('active');
-// };
+const prev = document.getElementById('btn-prev'),
+  next = document.getElementById('btn-next'),
+  slides = document.querySelectorAll('.slide'),
+  dots = document.querySelectorAll('.dot');
 
-// const prepareCurrentSlide = ind => {
-//   activeSlide(ind);
-//   activeDot(ind);
-// };
+let index = 0;
 
-// const nextSlide = () => {
-//   if (index === slides.length - 1) {
-//     index = 0;
-//     prepareCurrentSlide(index);
-//   } else {
-//     index++;
-//     prepareCurrentSlide(index);
-//   }
-// };
+const activeSlide = n => {
+  let slide;
+  for (slide of slides) {
+    slide.classList.remove('active');
+  }
+  slides[n].classList.add('active');
+};
 
-// const prevSlide = () => {
-//   if (index === 0) {
-//     index = slides.length - 1;
-//     prepareCurrentSlide(index);
-//   } else {
-//     index--;
-//     prepareCurrentSlide(index);
-//   }
-// };
+const activeDot = n => {
+  let dot;
+  for (dot of dots) {
+    dot.classList.remove('active');
+  }
+  dots[n].classList.add('active');
+};
 
-// let interval = setInterval(nextSlide, 2000);
+const prepareCurrentSlide = ind => {
+  activeSlide(ind);
+  activeDot(ind);
+};
 
-// dots.forEach((item, indexDot) => {
-//   item.addEventListener('click', () => {
-//     index = indexDot;
-//     prepareCurrentSlide(index);
-//     clearInterval(interval);
-//   });
-// });
+const nextSlide = () => {
+  if (index === slides.length - 1) {
+    index = 0;
+    prepareCurrentSlide(index);
+  } else {
+    index++;
+    prepareCurrentSlide(index);
+  }
+};
 
-// next.addEventListener('click', nextSlide);
-// next.addEventListener('click', () => {
-//   clearInterval(interval);
-// });
+const prevSlide = () => {
+  if (index === 0) {
+    index = slides.length - 1;
+    prepareCurrentSlide(index);
+  } else {
+    index--;
+    prepareCurrentSlide(index);
+  }
+};
 
-// prev.addEventListener('click', prevSlide);
-// prev.addEventListener('click', () => {
-//   clearInterval(interval);
-// });
+let interval = setInterval(nextSlide, 2000);
+
+dots.forEach((item, indexDot) => {
+  item.addEventListener('click', () => {
+    index = indexDot;
+    prepareCurrentSlide(index);
+    clearInterval(interval);
+  });
+});
+
+next.addEventListener('click', nextSlide);
+next.addEventListener('click', () => {
+  clearInterval(interval);
+});
+
+prev.addEventListener('click', prevSlide);
+prev.addEventListener('click', () => {
+  clearInterval(interval);
+});
+
+
+// ---slider persons---

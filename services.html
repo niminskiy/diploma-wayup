@@ -259,20 +259,37 @@
 							<h4 class="review__title">
 								Отзывы
 							</h4>
-							<div class="review__block">
-								<div class="review__slide">
+							<div class="review__block slick-initialized slick-slider slick-dotted">
+								<button type="button" class="slick-prev slick-arrow">
+									<i class="fa fa-angle-left"></i>
+								</button>
+								<div class="review__slide slick-list draggable">
 									<img src="img/foto.png" alt="Марк Цукерберг" class="review__avatar">
-									<p class="review__name">
+									<h5 class="review__name">
 										Валерий Цукерберг
-									</p>
-									<p class="review__text">
+									</h5>
+									<p>
 										al exercise, except to obtain some advantage from it? But who has any right to find fault with a man
 										who chooses to enjoy
 									</p>
-									<a href="#" class="review__link" rel="nofollow" target="_blank">
-										<i class="fab fa-facebook-f clients__facebook"></i>
+									<a href="https://www.facebook.com/" target="_blank">
+										<i class="fab fa-facebook-f"></i>
 									</a>
 								</div>
+								<button type="button" class="slick-next slick-arrow">
+									<i class="fa fa-angle-right"></i>
+								</button>
+								<ul class="slick-dots">
+									<li class="slick-active">
+										<button type="button" id="slick-slide-control"></button>
+									</li>
+									<li>
+										<button type="button" id="slick-slide-control"></button>
+									</li>
+									<li>
+										<button type="button" id="slick-slide-control"></button>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</aside>
