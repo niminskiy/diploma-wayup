@@ -1472,6 +1472,7 @@ span:last-child {
   .gallery__link::before {
     content: '\f065';
   }
+
 }
 
 
@@ -1519,6 +1520,16 @@ span:last-child {
     max-width: 100%;
     margin-bottom: 28px;
   }
+
+  .relation {
+    position: static;
+    max-width: 100%;
+    margin: 22px auto;
+  }
+
+  .relation__info {
+    max-width: 100%;
+  }
 }
 
 /* 470-576px */
@@ -1546,5 +1557,13 @@ span:last-child {
   .navigation .logo {
     min-width: 180px;
     display: block;
+  }
+
+  .relation__contacts {
+    flex-direction: column;
+  }
+
+  .relation__info {
+    margin-left: 0;
   }
 }
