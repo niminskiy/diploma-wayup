@@ -356,9 +356,11 @@ button {
 .trust__icon_light {
   background: #c8cbdb url(../img/lamp.png) no-repeat center;
 }
+
 .trust__icon_box {
   background: #c8cbdb url(../img/cube.png) no-repeat center;
 }
+
 .trust__icon_star {
   background: #c8cbdb url(../img/star.png) no-repeat center;
 }
@@ -604,9 +606,12 @@ button {
 }
 
 .logo-footer {
-  max-width: 290px;
+  display: block;
   margin-top: -33px;
+  max-width: 100%;
+  min-width: 190px;
 }
+
 .site__letter {
   font-size: 15px;
   font-weight: 100;
@@ -1279,118 +1284,129 @@ span:last-child {
   font-weight: 700;
 }
 
+/* ---Map--- */
 
-.maps {
+.map {
   position: relative;
-  padding: 42px 0;
+  /* padding: 42px 0; */
 }
 
-/* ---Coordinates--- */
+.map .container-fluid {
+  padding: 0;
+  min-height: 440px;
+}
 
-.coordinates {
-  padding: 19px 34px 46px 35px;
-  background-color: rgba(124, 132, 147, 0.9);
-  color: #fff;
+/* ---Relation--- */
+
+.map .container {
   position: relative;
-  z-index: 15;
-  border-radius: 5px;
+}
+
+.relation {
   max-width: 470px;
-}
-
-.coordinates:before {
-  content: '';
-  display: block;
-  border: 17px solid transparent;
+  background-color: rgba(88, 100, 122, .75);
+  color: #fff;
+  padding: 20px 35px 10px;
+  border-radius: 5px;
   position: absolute;
-  border-top: 17px solid rgba(124, 132, 147, 0.9);
-  border-left: 17px solid rgba(124, 132, 147, 0.9);
-  border-radius: 4px;
-  left: -17px;
-  top: 19px;
-  transform: rotate(-45deg) scale(1) skew(1deg) translate(0px);
+  z-index: 1;
+  right: 60px;
+  bottom: 65px;
 }
 
-.coordinates__title {
+.relation:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -17px;
+  border: 17px solid transparent;
+  transform: rotate(45deg);
+  border-bottom: 17px solid rgba(88, 100, 122, .75);
+  border-left: 17px solid rgba(88, 100, 122, .75);
+  border-bottom-left-radius: 5px;
+  margin-right: 15px;
+  align-items: flex-start;
+}
+
+.relation__heading {
+  border-bottom: 1px solid #fff;
+}
+
+.relation__title {
+  font-family: 'Museo Sans 700';
   font-size: 21px;
   color: #fff;
 }
 
-.coordinates__top {
-  border-bottom: 2px solid #9aa1ad;
-  padding-bottom: 19px;
+.social-else {
+  width: 130px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.coordinates__item {
+.social-else a {
+  font-size: 17px;
+  display: flex;
+  width: 30px;
+  height: 30px;
   border: 2px solid #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-.coordinates__item:not(:last-child) {
-  margin-right: 20px;
+.social-else a:hover {
+  color: #b81c31;
+  border-color: #b81c31;
+  background-color: #fff;
 }
 
-.coordinates__social {
-  color: #fff;
-  padding: 0 6px;
+
+.relation__contacts {
+  margin-top: 42px;
+  justify-content: space-between;
 }
 
-.coordinates__social:hover,
-.coordinates__link:hover {
-  color: #fff;
+
+.relation__list li {
+  width: 186px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.coordinates__description {
-  margin-top: 43px;
+.relation__list li:not(:first-child) {
+  margin-bottom: 24px;
 }
 
-.coordinates__link {
-  color: #fff;
-  display: block;
+.relation__list a {
+  font-family: 'Museo Sans 300';
+  font-size: 16px;
+  margin-left: 10px;
 }
 
-.coordinates__link:not(:last-child) {
-  margin-bottom: 10px;
+.relation__list a:hover {
+  color: #b81c31;
 }
 
-.coordinates__adress {
-  max-width: 185px;
-  width: 100%;
-  margin: 0;
+.relation__info {
+  max-width: 176px;
+  margin-left: 46px;
+  line-height: 1em;
 }
 
-.coordinates__post {
-  margin: 30px 0 23px;
-}
-
-.coordinates__link,
-.coordinates__post {
-  position: relative;
-  padding-left: 25px;
-}
-
-.coordinates__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.coordinates__offer {
-  max-width: 180px;
-  width: 100%;
-}
-
-.coordinates__text {
+.relation__info p {
   font-size: 12px;
-}
-
-.coordinates__text:not(:last-child) {
   margin-bottom: 16px;
 }
+
+
 
 
 /*---------------Адаптация-------------------*/
 
 /* 992-1200px */
 @media screen and (max-width: 1199px) {}
+
 
 
 /* 768-992px */
@@ -1468,6 +1484,7 @@ span:last-child {
   .summary__circle {
     margin: 32px 54px 32px 0;
   }
+
   .gallery {
     max-width: 100%;
   }
@@ -1479,7 +1496,7 @@ span:last-child {
   .logo-footer {
     display: inline-block;
   }
-  
+
   .communication {
     margin: 20px 0 26px;
   }
