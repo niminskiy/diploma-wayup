@@ -53,27 +53,100 @@ burger.addEventListener('click', function () {
 
 //---slider presentation---
 
-const prev = document.getElementById('btn-prev'),
-  next = document.getElementById('btn-next'),
-  slides = document.querySelectorAll('.slide'),
-  dots = document.querySelectorAll('.dot');
+// const prev = document.getElementById('btn-prev'),
+//   next = document.getElementById('btn-next'),
+//   slides = document.querySelectorAll('.slide'),
+//   dots = document.querySelectorAll('.dot');
+
+// let index = 0;
+
+// const activeSlide = n => {
+//   let slide;
+//   for (slide of slides) {
+//     slide.classList.remove('active');
+//   }
+//   slides[n].classList.add('active');
+// };
+
+// const activeDot = n => {
+//   let dot;
+//   for (dot of dots) {
+//     dot.classList.remove('active');
+//   }
+//   dots[n].classList.add('active');
+// };
+
+// const prepareCurrentSlide = ind => {
+//   activeSlide(ind);
+//   activeDot(ind);
+// };
+
+// const nextSlide = () => {
+//   if (index === slides.length - 1) {
+//     index = 0;
+//     prepareCurrentSlide(index);
+//   } else {
+//     index++;
+//     prepareCurrentSlide(index);
+//   }
+// };
+
+// const prevSlide = () => {
+//   if (index === 0) {
+//     index = slides.length - 1;
+//     prepareCurrentSlide(index);
+//   } else {
+//     index--;
+//     prepareCurrentSlide(index);
+//   }
+// };
+
+// let interval = setInterval(nextSlide, 2000);
+
+// dots.forEach((item, indexDot) => {
+//   item.addEventListener('click', () => {
+//     index = indexDot;
+//     prepareCurrentSlide(index);
+//     clearInterval(interval);
+//   });
+// });
+
+// next.addEventListener('click', nextSlide);
+// next.addEventListener('click', () => {
+//   clearInterval(interval);
+// });
+
+// prev.addEventListener('click', prevSlide);
+// prev.addEventListener('click', () => {
+//   clearInterval(interval);
+// });
+
+
+// ---slider persons---
+
+const prev = document.getElementById('slick-prev'),
+  next = document.getElementById('slick-next'),
+  slides = document.querySelectorAll('.slick-slide'),
+  dots = document.querySelectorAll('.slick-dot');
 
 let index = 0;
+let slide;
+let dot;
 
 const activeSlide = n => {
-  let slide;
+
   for (slide of slides) {
-    slide.classList.remove('active');
+    slide.classList.remove('slick-active');
   }
-  slides[n].classList.add('active');
+  slides[n].classList.add('slick-active');
 };
 
 const activeDot = n => {
-  let dot;
+
   for (dot of dots) {
-    dot.classList.remove('active');
+    dot.classList.remove('slick-active');
   }
-  dots[n].classList.add('active');
+  dots[n].classList.add('slick-active');
 };
 
 const prepareCurrentSlide = ind => {
@@ -101,25 +174,12 @@ const prevSlide = () => {
   }
 };
 
-let interval = setInterval(nextSlide, 2000);
-
 dots.forEach((item, indexDot) => {
   item.addEventListener('click', () => {
     index = indexDot;
     prepareCurrentSlide(index);
-    clearInterval(interval);
   });
 });
 
 next.addEventListener('click', nextSlide);
-next.addEventListener('click', () => {
-  clearInterval(interval);
-});
-
 prev.addEventListener('click', prevSlide);
-prev.addEventListener('click', () => {
-  clearInterval(interval);
-});
-
-
-// ---slider persons---
