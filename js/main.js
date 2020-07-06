@@ -50,6 +50,15 @@ burger.addEventListener('click', function () {
   this.classList.toggle('active');
 });
 
+document.addEventListener('click', function(e) {
+  if (e.target.closest('#menu') || e.target.closest('#burger')) {
+    return false;
+  }
+  menu.classList.remove('active');
+  burger.classList.remove('active');
+  e.stopPropagation();
+});
+
 
 //---slider presentation---
 
