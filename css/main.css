@@ -732,7 +732,6 @@ button {
 
 .modal-call {
   position: fixed;
-  margin-left: -150px;
   left: 50%;
   top: -100%;
   padding: 20px;
@@ -740,10 +739,12 @@ button {
   flex-direction: column;
   text-align: center;
   max-width: 412px;
+  width: 90%;
   border-radius: 5px;
   background: #fff;
   padding: 50px 50px;
   transition: all 0.5s ease-in;
+  transform: translateX(-50%);
 }
 
 .overflow-call {
@@ -794,7 +795,7 @@ button {
   border-top: 5px solid #58647a;
   border-bottom: 4px solid rgba(88, 100, 122, .08);
   background-clip: padding-box;
-  padding: 17px 0 5px;
+  padding: 8px 0 5px;
 }
 
 /* ---Discribe--- */
@@ -855,9 +856,10 @@ button {
   border-radius: 2px;
 }
 
-.paragraph__disc {
+.paragraph span {
   font-family: 'Museo Sans 300';
   font-size: 13px;
+  font-weight: normal;
 }
 
 /*---Merit---*/
@@ -1068,7 +1070,8 @@ button {
   position: relative;
   background: url(../img/lawyer.png) no-repeat center top/cover;
   color: #fff;
-  padding: 16px 0 36px;
+  padding: 42px 0 38px;
+  margin-top: -5px;
 }
 
 .lawyer:before {
@@ -1083,40 +1086,36 @@ button {
 
 .people {
   max-width: 206px;
+  display: inline-block;
 }
 
 .guiding {
   max-width: 330px;
-  letter-spacing: 0.02em;
 }
 
 .guiding__title {
+  font-family: 'Museo Sans 700';
   font-size: 25px;
-  font-weight: 700;
   color: #fff;
-  margin-bottom: 20px;
 }
 
-.guiding__text {
+.guiding p {
   font-size: 15px;
-  font-weight: 300;
 }
 
 /* ---Services--- */
 
 .services {
   font-size: 15px;
-  font-weight: 300;
   border: 2px solid #9499a6;
   border-radius: 5px;
   padding: 18px 40px 10px 25px;
-  margin-top: 25px;
   letter-spacing: 0.02em;
   max-width: 370px;
 }
 
 .services__list {
-  margin: 4px 0 10px 10px;
+  margin-bottom: 11px;
 }
 
 .services__link {
@@ -1749,5 +1748,9 @@ button {
 
   .relation__contacts {
     flex-direction: column;
+  }
+
+  .modal-call {
+    padding: 50px 6%;
   }
 }
