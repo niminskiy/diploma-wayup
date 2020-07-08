@@ -885,7 +885,6 @@ button {
   max-width: 49%;
 }
 
-
 /* ---Summary--- */
 
 .summary {
@@ -1070,7 +1069,7 @@ button {
   position: relative;
   background: url(../img/lawyer.png) no-repeat center top/cover;
   color: #fff;
-  padding: 42px 0 38px;
+  padding: 42px 0 36px;
   margin-top: -5px;
 }
 
@@ -1091,16 +1090,20 @@ button {
 
 .guiding {
   max-width: 330px;
+  margin-top: -18px;
 }
 
 .guiding__title {
   font-family: 'Museo Sans 700';
   font-size: 25px;
   color: #fff;
+  margin-bottom: 14px;
 }
 
 .guiding p {
   font-size: 15px;
+  letter-spacing: 0.02em;
+  line-height: 1.3em;
 }
 
 /* ---Services--- */
@@ -1109,7 +1112,7 @@ button {
   font-size: 15px;
   border: 2px solid #9499a6;
   border-radius: 5px;
-  padding: 18px 40px 10px 25px;
+  padding: 16px 40px 10px 24px;
   letter-spacing: 0.02em;
   max-width: 370px;
 }
@@ -1125,26 +1128,25 @@ button {
   border-bottom: 1px solid transparent;
 }
 
+.services__link:before {
+  content: '\2192';
+  margin: 0 4px 0 5px;
+}
+
 .services__link:hover {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #cecdd1;
 }
 
-.services__link:before {
-  content: '\2192';
-  margin: 0 4px 0 5px;
-}
-
 /* ---Subcategory--- */
 
 .category {
-  padding: 12px 0 55px;
+  padding: 57px 0 55px;
   letter-spacing: 0.02em;
 }
 
 .sub {
-  padding-top: 45px;
   margin-bottom: 30px;
 }
 
@@ -1160,12 +1162,13 @@ button {
   letter-spacing: 0.02em;
 }
 
-.sub__text {
+.sub p {
   color: #404048;
   font-size: 15px;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.3em;
   letter-spacing: 0.02em;
+  margin-bottom: 15px;
 }
 
 /* ---Help--- */
@@ -1175,14 +1178,14 @@ button {
   border-radius: 4px;
   padding: 23px 28px 29px 32px;
   max-width: 470px;
-  background: url(../img/conf_call.png) right bottom no-repeat;
+  background: url(../img/conf_call.png) 96% 80% no-repeat;
 }
 
 .help__title {
   font-size: 17px;
   font-weight: 700;
   color: #414449;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .help__call {
@@ -1190,7 +1193,7 @@ button {
   font-size: 14px;
   font-weight: 700;
   border: 2px solid #b81c31;
-  padding: 10px 19px;
+  padding: 9px 24px;
   background: transparent;
 }
 
@@ -1205,14 +1208,14 @@ button {
   font-size: 14px;
   font-weight: 700;
   color: #585f6b;
-  margin-left: 30px;
+  margin-left: 19px;
 }
 
 .help__number:hover {
   color: #b81c31;
 }
 
-.help__text {
+.help p {
   font-size: 12px;
   font-weight: 300;
   color: #888d95;
@@ -1227,10 +1230,10 @@ button {
 
 /* ---Aside All--- */
 
-.all {
+.aside {
   background-color: #fafafb;
   height: 100%;
-  padding: 48px 0 105px 0px;
+  padding: 48px 0 90px 0px;
 }
 
 .guidance {
@@ -1240,7 +1243,7 @@ button {
 .guidance__title {
   font-size: 18px;
   color: #969ca9;
-  margin-bottom: 42px;
+  margin: 0 0 42px 30px;
 }
 
 .subparagraph {
@@ -1252,6 +1255,7 @@ button {
 
 .subparagraph__link {
   color: #747487;
+  max-width: 190px;
   margin-left: 30px;
 }
 
@@ -1262,7 +1266,7 @@ button {
 
 .subparagraph__list {
   border-bottom: 1px solid #dfdfe8;
-  padding: 10px 0;
+  padding: 12px 20px 8px 30px;
   position: relative;
 }
 
@@ -1284,17 +1288,18 @@ button {
 .review__title {
   color: #969ca9;
   font-size: 18px;
-  margin-bottom: 28px;
+  margin: 0 0 38px 30px;
 }
 
 .review__slide {
   text-align: center;
+  padding: 0 20px;
 }
 
 .review__avatar {
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border: 5px solid #656e8d;
   border-radius: 50%;
   object-fit: cover;
@@ -1306,22 +1311,22 @@ button {
   font-family: 'Museo Sans 700';
   font-size: 16px;
   color: #747487;
-  margin: 17px 0 17px;
+  margin: 17px 0 14px;
 }
 
 .review p {
   font-size: 13px;
-  font-weight: 300;
   color: #404048;
+  line-height: 1.2em;
   margin-bottom: 16px;
-  max-width: 254px;
+  max-width: 270px;
   margin: 0 auto;
 }
 
 .review a {
   color: #2c60a0;
-  font-size: 16px;
-  margin: 15px 0 20px;
+  font-size: 14px;
+  margin: 12px 0 20px;
   display: block;
 }
 
@@ -1380,13 +1385,13 @@ button {
 
 .slick-prev {
   z-index: 15;
-  top: 14%;
-  left: 9%;
+  top: 18%;
+  left: 8%;
 }
 
 .slick-next {
-  top: 14%;
-  right: 9%;
+  top: 18%;
+  right: 4%;
 }
 
 .fa,
@@ -1414,13 +1419,13 @@ button {
 }
 
 .slick-dots li {
-  margin-right: 17px;
+  margin-left: 14px;
 }
 
 .slick-dots li button {
   background: #bdc5d6;
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   display: block;
   border: none;
   font-size: 0;
@@ -1447,9 +1452,8 @@ button {
   position: relative;
 }
 
-.map .container-fluid {
-  padding: 0;
-  min-height: 440px;
+.map iframe {
+  display: block;
 }
 
 /* ---Relation--- */
@@ -1517,12 +1521,10 @@ button {
   background-color: #fff;
 }
 
-
 .relation__contacts {
   margin-top: 42px;
   justify-content: space-between;
 }
-
 
 .relation__list li {
   width: 186px;
@@ -1556,14 +1558,10 @@ button {
 }
 
 
-
-
 /*---------------Адаптация-------------------*/
 
 /* 992-1200px */
 @media screen and (max-width: 1199px) {}
-
-
 
 /* 768-992px */
 @media screen and (max-width: 991px) {
@@ -1637,8 +1635,20 @@ button {
   .crumblebread {
     padding-bottom: 52px;
   }
-}
 
+  .guiding {
+    max-width: none;
+  }
+
+  .help {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .subparagraph__link {
+    max-width: none;
+  }
+}
 
 /* 576-768px */
 @media screen and (max-width: 767px) {
@@ -1710,7 +1720,6 @@ button {
   }
 
   .guiding {
-    max-width: 100%;
     text-align: center;
   }
 }
@@ -1719,6 +1728,10 @@ button {
 @media screen and (max-width: 575px) {
   .container {
     width: 100%;
+  }
+
+  .help {
+    background: none;
   }
 }
 
@@ -1752,5 +1765,21 @@ button {
 
   .modal-call {
     padding: 50px 6%;
+  }
+
+  .help {
+    text-align: center;
+  }
+
+  .request {
+    flex-direction: column;
+  }
+
+  .help__number {
+    margin: 12px 0;
+  }
+
+  .help p {
+    margin: 0 auto;
   }
 }
